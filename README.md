@@ -15,7 +15,6 @@ The project focuses on creating an algorithmic trading system to predict the fut
 # Libraries 
 ## Import Libraries
 
-- Python 3.x
 - Prophet library (`pip install prophet`)
 - Holoviews (`pip install holoviews`)
 - Hvplot (`pip install hvplot`)
