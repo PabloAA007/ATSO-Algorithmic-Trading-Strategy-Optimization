@@ -12,15 +12,20 @@ Pablo Acevedo <br>
 *Presentation Aug 03rd, 2023*
 
 ## Overview
-The project focuses on building an algorithmic trading system to predict the future trends of any given stock, Apple Inc. (AAPL) stock prices using the Prophet library. Through a combination of sentiment analysis, time series forecasting, and text analysis to understand potential market movements and make informed investment decisions. By analyzing historical AAPL stock price data, we aim to generate forecasts for the next 36 months, providing valuable insights into possible future price movements. Additionally, we will utilize the Natural Language Toolkit (NLTK) for text analysis to extract meaningful information from news articles. Combining both time series forecasting and text analysis will enable us to gain valuable insights into AAPL stock price trends and market sentiment from news articles, enhancing our ability to make data-driven investment decisions. <br>
+The project focuses on building an algorithmic trading system to predict the future trends of any given stock. Focusing on Apple Inc. (AAPL) stock prices using the Prophet library, through a combination of sentiment analysis, time series forecasting, and text analysis we tried to understand potential market movements and make informed investment decisions. By analyzing historical AAPL stock price data, we aim to generate forecasts for the next 30 days, providing valuable insights into possible future price movements. Additionally, we utilized the Natural Language Toolkit (NLTK) for text analysis to extract meaningful information from news articles. Combining time series forecasting and text analysis will give us valuable insights into AAPL stock price trends and market sentiment from news articles, enhancing our ability to make data-driven investment decisions. <br>
 
 # Libraries 
 ## Import Libraries
 
-- Prophet library (`pip install prophet`)
-- Holoviews (`pip install holoviews`)
-- Hvplot (`pip install hvplot`)
-- Natural Language ToolKit(`pip install nltk`)
+- Pandas: (`pip install pandas`)
+- NumPy: (`pip install numpy`)
+- Prophet library: (`pip install prophet`)
+- scikit-learn: pip install scikit-learn
+- Holoviews: (`pip install holoviews`)
+- Matplotlib: (`pip install matplotlib`)
+- Requests: (`pip install requests`)
+- Hvplot: (`pip install hvplot`)
+- Natural Language ToolKit: (`pip install nltk`)
 
 # Project Goals
 The goal of the project was to develop a comprehensive set of code to provide the ability to predict the future stock price trends of any stock we would like to examine this use case with. The code will provide an assessment on the stock's future price trends based on the combination of the results returned from the two methods that have been used, that being sentiment analysis and technical analysis. By providing an overall assessment based on both sentiment analysis and the technical analysis in combination, our projects output is able to get a more accurate prediction of the future stock price trends by looking at both the quantitative aspect of the market, i.e. investor sentiment in the market around a particular stock, and the quantitative side of things as well, i.e. historical stock price data. 
