@@ -36,28 +36,28 @@ To achieve the end goal relating to the sentiment analysis portion of the projec
 ## Prophet_model
 Time series forecasting using the Facebook Prophet library. It demonstrates how to load financial data, preprocess it, and use Prophet to make predictions. 
 
-Loading financial data (e.g., stock prices, economic indicators).
-Preprocessing and cleaning the data (e.g., handling missing values, adjusting date formats).
-Training a Prophet model to forecast future stock prices.
-Visualizing the forecasted results using interactive plots.
+Loading financial data (e.g., stock prices, economic indicators). <br>
+Preprocessing and cleaning the data (e.g., handling missing values, adjusting date formats). <br>
+Training a Prophet model to forecast future stock prices. <br>
+Visualizing the forecasted results using interactive plots. <br>
 
 ## Natural Language Processing
 Natural Language Processing (NLP) techniques are applied to analyze the sentiment of financial news articles related to specific stocks.
 
-Loading a dataset containing financial news articles and sentiment scores.
-Preprocessing the text data (e.g., lowercase, tokenization, stop-word removal).
-Splitting the data into training and testing sets.
-Vectorizing the text data using TF-IDF (Term Frequency-Inverse Document Frequency).
-Training a sentiment analysis model (e.g., Naive Bayes, Random Forest) to predict sentiment scores.
-Evaluating the model's performance using Mean Squared Error.
-Visualizing the model's predictions and actual sentiment scores.
+Loading a dataset containing financial news articles and sentiment scores. <br>
+Preprocessing the text data (e.g., lowercase, tokenization, stop-word removal). <br>
+Splitting the data into training and testing sets. <br>
+Vectorizing the text data using TF-IDF (Term Frequency-Inverse Document Frequency). <br>
+Training a sentiment analysis model (e.g., Naive Bayes, Random Forest) to predict sentiment scores. <br>
+Evaluating the model's performance using Mean Squared Error. <br>
+Visualizing the model's predictions and actual sentiment scores. <br>
 
 ## Static_webscraper.ipynb
 Create a static web scraper to extract content from financial news articles on Yahoo Finance. 
 
-Using the requests library to make an HTTP request to a specific URL.
-Parsing the HTML content of the page using BeautifulSoup.
-Extracting the article content from the HTML, specifically focusing on the main body of the article.
-Saving the extracted article content to a CSV file for further analysis.
+Using the requests library to make an HTTP request to a specific URL. <br>
+Parsing the HTML content of the page using BeautifulSoup. <br>
+Extracting the article content from the HTML, specifically focusing on the main body of the article. <br>
+Saving the extracted article content to a CSV file for further analysis. <br>
 
 ## Conclusion
