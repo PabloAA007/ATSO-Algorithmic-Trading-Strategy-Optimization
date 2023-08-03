@@ -33,3 +33,31 @@ The goal of the project was to develop a comprehensive set of code to provide th
 Scope of analysis:
 To achieve the end goal relating to the sentiment analysis portion of the project, we needed to see whether the news articles we were running through our code would be ultimately classified as having positive, negative and neutral sentiment around them. To collect the data for the csv file that is created and used to filter for the stock of our choice, Apple, we utilized an API called News API, which gave us the ability to filter for a group of stocks and the quantitative data type of our choice for that stock, allowing us to collect and return news articles over time related to the stocks we choose. Once the API requests had been made for english news articles on the stocks, the data was run through a forloop, collected and stored in a list. Then we instantiated our SentinmentIntensityAnalyzer and created a forloop that would run through the list of news articles in our stock list, analyze and transform the qualitative data into a quantitative sentiment score. We were then able to filter the data into a csv file containing the sentiment scores of news surrounding Apple. 
 
+## Prophet_model
+Time series forecasting using the Facebook Prophet library. It demonstrates how to load financial data, preprocess it, and use Prophet to make predictions. 
+
+Loading financial data (e.g., stock prices, economic indicators).
+Preprocessing and cleaning the data (e.g., handling missing values, adjusting date formats).
+Training a Prophet model to forecast future stock prices.
+Visualizing the forecasted results using interactive plots.
+
+## Natural Language Processing
+Natural Language Processing (NLP) techniques are applied to analyze the sentiment of financial news articles related to specific stocks.
+
+Loading a dataset containing financial news articles and sentiment scores.
+Preprocessing the text data (e.g., lowercase, tokenization, stop-word removal).
+Splitting the data into training and testing sets.
+Vectorizing the text data using TF-IDF (Term Frequency-Inverse Document Frequency).
+Training a sentiment analysis model (e.g., Naive Bayes, Random Forest) to predict sentiment scores.
+Evaluating the model's performance using Mean Squared Error.
+Visualizing the model's predictions and actual sentiment scores.
+
+## Static_webscraper.ipynb
+Create a static web scraper to extract content from financial news articles on Yahoo Finance. 
+
+Using the requests library to make an HTTP request to a specific URL.
+Parsing the HTML content of the page using BeautifulSoup.
+Extracting the article content from the HTML, specifically focusing on the main body of the article.
+Saving the extracted article content to a CSV file for further analysis.
+
+## Conclusion
