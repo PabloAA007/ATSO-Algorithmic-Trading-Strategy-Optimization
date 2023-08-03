@@ -1,4 +1,6 @@
-# ATSO-Algorithmic-Trading-Strategy-Optimization
+# The NLP Stock Prophet: Forecasting Words into Wealth
+
+![Words into Wealth](https://realpython.com/cdn-cgi/image/width=960,format=auto/https://files.realpython.com/media/NLP-for-Beginners-Pythons-Natural-Language-Toolkit-NLTK_Watermarked.16a787c1e9c6.jpg)
 
 **Team Members:** <br>
 Athura Thavathasan <br>
