@@ -7,7 +7,9 @@ Athura Thavathasan <br>
 Brandon Petrie <br>
 Harshitha Katta <br>
 Nicholas Gracan <br>
-Pablo Acevedo <br>
+Pablo Aray Acevedo <br>
+
+Presentation: https://docs.google.com/presentation/d/1bbsZ5Q9QETytBUTxkvsNPNWXn1ky3E_qByOCSHYsecM/edit?usp=sharing
 
 *Presentation Aug 03rd, 2023*
 
