@@ -69,10 +69,6 @@ Visualizing the model's predictions and actual sentiment scores. <br>
 
 ![image](https://github.com/PabloAA007/ATSO-Algorithmic-Trading-Strategy-Optimization/assets/125240804/f2d6ed9c-a309-4be0-9474-7b87cc4f5b6f)
 
-### Sentiment Analysis Results
-
-![image](https://github.com/PabloAA007/ATSO-Algorithmic-Trading-Strategy-Optimization/assets/125240804/4dee9981-7e44-4cdd-a7f2-bbd72807e306)
-
 ## Static_webscraper.ipynb
 Create a static web scraper to extract content from financial news articles on Yahoo Finance. 
 
@@ -81,4 +77,57 @@ Parsing the HTML content of the page using BeautifulSoup. <br>
 Extracting the article content from the HTML, specifically focusing on the main body of the article. <br>
 Saving the extracted article content to a CSV file for further analysis. <br>
 
+## Results
+
+### Technical Analysis
+
+As we can see from the AAPL share price from the start of the year, it is on a significant bull run. In the graph below displays 
+the stability of this blue chip stock,  its not a surprise the linear regression model predicted a stable gradual growth over the course of the next 30 days.
+
+![image](https://github.com/PabloAA007/ATSO-Algorithmic-Trading-Strategy-Optimization/assets/125240804/d0b9c143-45f5-4f85-acb1-45f43215957d)
+
+Our linear regression for our sentimental analysis, tends to show a trend of positive correlation.  There are some outliers below the line, however, our model has too many points of predicting higher sentiment than what actually showed up.
+
+Mean Squared Error: 0.057052474980422443
+
+However, we did have a low MSE score.  Leaving us to believe this model was pretty good but not exceptionally strong. 
+
+![image](https://github.com/PabloAA007/ATSO-Algorithmic-Trading-Strategy-Optimization/assets/125240804/6d14c95d-20a6-453d-b4fd-ef24a12b0754)
+
+Graph 1 at the top shows the AAPL share price over the course of the last month.  Graph 2 is the daily percent change, as we can see they are perfectly correlated.  
+Graph 3 takes the sentiment of different articles with AAPL in the title and creates the average daily sentiment.  As we can see, the plots are all scattered, as the sentiment points don't seem to have a true correlation to the above graphs.
+
+![image](https://github.com/PabloAA007/ATSO-Algorithmic-Trading-Strategy-Optimization/assets/125240804/c55e23d6-51c1-43ae-b0ca-d2690819902f)
+
+### Sentiment Analysis 
+
+Here is a pie graph to depict what sentiment ranking the 100 articles we collected were. Apple has 4 times the amount of positive articles to negative.
+
+This chart could potentially support the prophet model  predictions for the bull trend.
+
+![image](https://github.com/PabloAA007/ATSO-Algorithmic-Trading-Strategy-Optimization/assets/125240804/4dee9981-7e44-4cdd-a7f2-bbd72807e306)
+
 ## Conclusion
+
+In conclusion, there is an upward trend in AAPL stock supported by our profit model.
+The sentimental analysis was initially supposed to support the technical analysis as a factor to predict the stock trend and price. Instead, it was utilized as a comparison to verify the technical analysis outcome. 
+
+## Next Step
+
+Include other sources to extract NLP data
+* For example: Twitter API, pygooglenews, Reuters Corpus
+* Web Scraping
+
+Alter the dataset to include more content
+* Have access to a larger pull request option (paid API)
+* Utilize larger content (entire article content instead of descriptions)
+* Expand Dataset timeline (greater than 30 days)
+
+Utilize more NLTK libraries to filter the dataset
+* Tokenization
+* Stemming
+
+Utilize NLP and other machine learning model outputs to predict stock prices and trends
+* Streamlit Application
+
+
