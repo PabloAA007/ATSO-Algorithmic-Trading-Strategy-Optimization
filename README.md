@@ -14,7 +14,7 @@ Presentation: https://docs.google.com/presentation/d/1bbsZ5Q9QETytBUTxkvsNPNWXn1
 *Presentation Aug 03rd, 2023*
 
 ## Overview
-The project focuses on building a comprehensive application to predict the future trends of any given stock. Focusing on Apple Inc. (AAPL) stock prices using the Prophet library, through a combination of sentiment analysis, time series forecasting, and text analysis we tried to understand potential market movements and make informed investment decisions. By analyzing historical AAPL stock price data, we aim to generate forecasts for the next 30 days, providing valuable insights into possible future price movements. Additionally, we utilized the Natural Language Toolkit (NLTK) for text analysis to extract meaningful information from news articles. Combining time series forecasting and text analysis will give us valuable insights into AAPL stock price trends and market sentiment from news articles, enhancing our ability to make data-driven investment decisions. <br>
+The project focuses on building a comprehensive application to predict the future trends of any given stock. Focusing on Apple Inc. (AAPL) stock prices using machine learning models like Linear regression and the Facebook Prophet Forecasting library, as well as through a combination of sentiment analysis, time series forecasting, and text analysis we tried to understand potential market movements and make informed investment decisions. By analyzing historical AAPL stock price data, we aim to generate forecasts for the next 30 days, providing valuable insights into possible future price movements. Additionally, we utilized the Natural Language Toolkit (NLTK) for text analysis to extract meaningful information from news articles. Combining time series forecasting and text analysis will give us valuable insights into AAPL stock price trends and market sentiment from news articles, enhancing our ability to make data-driven investment decisions. <br>
 
 # Libraries 
 ## Import Libraries
@@ -30,9 +30,7 @@ The project focuses on building a comprehensive application to predict the futur
 - Natural Language ToolKit: (`pip install nltk`)
   
 # Executive Summary 
-- This project explores the use cases of Natural Language Processing (NLP) and Financial Technical analysis tools within the Financial Technology industry to produce a forecast/predictions of future stock price trends. 
-- The outcome was achieved through the implementation of multiple tools within the overall categories listed above, for example: Natural Language Processing (NLP) tools like the SentimentIntensityAnalyzer, Machine Learning (ML)/forecasting models such as Prophet Model & Linear Regression models. The project also utilizes API tools such as the News API & Yahoo Finance API to retrieve the data necessary for analysis and Python to preprocess and clean up the data that made the analysis possible.  
-- Through the use of fundamental, technical, & NLP analysis techniques we are looking to reveal and predict potential future market movements/trends based on qualitative and quantitative data related to a particular industry or individual stock of a company itself.
+This project explores the use cases of Natural Language Processing (NLP) and Financial Technical analysis tools within the Financial Technology industry to produce a forecast/predictions of future stock price trends. The outcome was achieved through the implementation of multiple tools within the overall categories listed above, for example: Natural Language Processing (NLP) tools like the SentimentIntensityAnalyzer, Machine Learning (ML)/forecasting models such as Prophet Model & Linear Regression models. The project also utilizes API tools such as the News API & Yahoo Finance API to retrieve the data necessary for analysis and Python to preprocess and clean up the data that made the analysis possible. Through the use of fundamental, technical, & NLP analysis techniques we are looking to reveal and predict potential future market movements/trends based on qualitative and quantitative data related to a particular industry or individual stock of a company itself.
 
 # Project Goals
 The project's goal was to develop a comprehensive set of codes to provide the ability to predict the future stock price trends of any stock we would like to examine this use case with. The code will provide an assessment of the stock's future price trends based on the combination of the results returned from the two methods that have been used, that being sentiment analysis and technical analysis. By providing an overall assessment based on both sentiment analysis and technical analysis in combination, the output of our project is able to get a more accurate prediction of future stock price trends by looking at both the quantitative aspect of the market, i.e. investor sentiment in the market around a particular stock, and the quantitative side of things as well, i.e. historical stock price data. 
@@ -44,7 +42,7 @@ The technical analysis portion of the project involved using a couple of differe
 
 The next part of the technical analysis was using the Facebook Prophet model to forecast and make predictions for the future stock price of Apple over the next 30 days. The data was retrieved from Google Finance for the past 3 years of historical stock price data for Apple and exported into a CSV. The data from the CSV was turned into a data frame, cleaned and formatted so it was ready for analysis. The Prophet model was fitted with the x and y features and ran through the model to give us our future trends predictions. The future trends predictions were plotted and the results of the Prophet model also show an increase in the stock price of Apple in the period we were analyzing. This had results that were similar to the linear regression model results. 
 
-## Prophet_model
+## Prophet model
 
 Time series forecasting using the Facebook Prophet library. It demonstrates how to load financial data, preprocess it, and use Prophet to make predictions. 
 
@@ -84,21 +82,22 @@ Saving the extracted article content to a CSV file for further analysis. <br>
 
 ### Technical Analysis
 
-As we can see from the AAPL share price from the start of the year, it is on a significant bull run. In the graph below displays 
+As we can see from the AAPL share price from the start of the year, it is on a significant bull run. The second graph below displays 
 the stability of this blue-chip stock,  it's not a surprise the linear regression model predicted a stable gradual growth over the course of the next 30 days.
 
 ![image](https://github.com/PabloAA007/ATSO-Algorithmic-Trading-Strategy-Optimization/assets/125240804/d0b9c143-45f5-4f85-acb1-45f43215957d)
 
-Our linear regression for our sentimental analysis tends to show a trend of positive correlation.  There are some outliers below the line, however, our model has too many points of predicting higher sentiment than what actually showed up.
+Our linear regression for our sentimental analysis tends to show a trend of positive correlation. There are some outliers below the line, however, our model has too many points of predicting higher sentiment than what actually showed up.
 
 Mean Squared Error: 0.057052474980422443
 
-However, we did have a low MSE score.  Leaving us to believe this model was pretty good but not exceptionally strong. 
+However, we did have a low MSE score. Leaving us to believe this model was pretty good but not exceptionally strong. 
 
 ![image](https://github.com/PabloAA007/ATSO-Algorithmic-Trading-Strategy-Optimization/assets/125240804/6d14c95d-20a6-453d-b4fd-ef24a12b0754)
 
-Graph 1 at the top shows the AAPL share price over the course of the last month.  Graph 2 is the daily percent change, as we can see they are perfectly correlated.  
-Graph 3 takes the sentiment of different articles with AAPL in the title and creates the average daily sentiment.  As we can see, the plots are all scattered, as the sentiment points don't seem to have a true correlation to the above graphs.
+Graph 1 at the top shows the AAPL share price over the course of the last month. Graph 2 is the daily percent change, as we can see they are perfectly correlated.  
+
+Graph 3 takes the sentiment of different articles with AAPL in the title and creates the average daily sentiment. As we can see, the plots are all scattered, as the sentiment points don't seem to have a true correlation to the above graphs.
 
 ![image](https://github.com/PabloAA007/ATSO-Algorithmic-Trading-Strategy-Optimization/assets/125240804/c55e23d6-51c1-43ae-b0ca-d2690819902f)
 
@@ -106,14 +105,14 @@ Graph 3 takes the sentiment of different articles with AAPL in the title and cre
 
 Here is a pie graph to depict what sentiment ranking the 100 articles we collected were. Apple has 4 times the amount of positive articles to negative.
 
-This chart could potentially support the prophet model  predictions for the bull trend.
+This chart could potentially support the prophet model  predictions for the future price increase trend.
 
 ![image](https://github.com/PabloAA007/ATSO-Algorithmic-Trading-Strategy-Optimization/assets/125240804/4dee9981-7e44-4cdd-a7f2-bbd72807e306)
 
 ## Conclusion
 
-In conclusion, there is an upward trend in AAPL stock supported by our profit model.
-The sentimental analysis was initially supposed to support the technical analysis as a factor to predict the stock trend and price. Instead, it was utilized as a comparison to verify the technical analysis outcome. 
+In conclusion, there is an upward trend in AAPL stock price supported by our various models and analysis performed in the application.
+The sentimental analysis was intended to support the technical analysis as another factor that could be used to predict the future stock trend and price. It was utilized as a comparison to the other models to verify the technical analysis outcome. 
 
 ## Next Step
 
