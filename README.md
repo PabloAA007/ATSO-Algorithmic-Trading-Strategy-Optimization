@@ -45,21 +45,33 @@ The technical analysis portion of the project involved using a couple different 
 ## Prophet_model
 Time series forecasting using the Facebook Prophet library. It demonstrates how to load financial data, preprocess it, and use Prophet to make predictions. 
 
-Loading financial data (e.g., stock prices, economic indicators). <br>
-Preprocessing and cleaning the data (e.g., handling missing values, adjusting date formats). <br>
-Training a Prophet model to forecast future stock prices. <br>
-Visualizing the forecasted results using interactive plots. <br>
+* Loading financial data (e.g., stock prices, economic indicators). <br>
+* Preprocessing and cleaning the data (e.g., handling missing values, adjusting date formats). <br>
+* Training a Prophet model to forecast future stock prices. <br>
+* Visualizing the forecasted results using interactive plots. <br>
+
+![image](https://github.com/PabloAA007/ATSO-Algorithmic-Trading-Strategy-Optimization/assets/125240804/63738534-9346-4261-8b13-92394d486979)
 
 ## Natural Language Processing
 Natural Language Processing (NLP) techniques are applied to analyze the sentiment of financial news articles related to specific stocks.
 
 Loading a dataset containing financial news articles and sentiment scores. <br>
 Preprocessing the text data (e.g., lowercase, tokenization, stop-word removal). <br>
+The Dataset was stored in a CSV file.
+
+![image](https://github.com/PabloAA007/ATSO-Algorithmic-Trading-Strategy-Optimization/assets/125240804/ecef1d89-fa03-4d20-8e8c-93a0924b5d1e)
+
 Splitting the data into training and testing sets. <br>
 Vectorizing the text data using TF-IDF (Term Frequency-Inverse Document Frequency). <br>
 Training a sentiment analysis model (e.g., Naive Bayes, Random Forest) to predict sentiment scores. <br>
 Evaluating the model's performance using Mean Squared Error. <br>
 Visualizing the model's predictions and actual sentiment scores. <br>
+
+![image](https://github.com/PabloAA007/ATSO-Algorithmic-Trading-Strategy-Optimization/assets/125240804/f2d6ed9c-a309-4be0-9474-7b87cc4f5b6f)
+
+### Sentiment Analysis Results
+
+![image](https://github.com/PabloAA007/ATSO-Algorithmic-Trading-Strategy-Optimization/assets/125240804/4dee9981-7e44-4cdd-a7f2-bbd72807e306)
 
 ## Static_webscraper.ipynb
 Create a static web scraper to extract content from financial news articles on Yahoo Finance. 
